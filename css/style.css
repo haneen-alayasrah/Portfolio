@@ -54,11 +54,17 @@ width: 100%;
     margin: 1%;
 }
 .buttonabout{
-    margin-top: 3%;
+     margin-top: 3%; 
     font-size: 2px;
-margin-bottom: 8%;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    margin-bottom: 8%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.skills-tile i{
+    font-size: 220%;
 
+}
+.skills-tile p{
+    font-size: 30%; margin-top: 4px;
+}
 .services{
     text-align: center;
    
@@ -66,28 +72,28 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 }
 .boxser{
     margin: auto;
-     width: 18rem;
-margin-top: 30%;
-box-shadow: 10px 10px 10px 10px  rgb(233, 232, 232);
-background-color: white;
-bottom: 30%;
+    width: 18rem;
+    margin-top: 30%;
+    box-shadow: 10px 10px 10px 10px  rgb(233, 232, 232);
+    background-color: white;
+    bottom: 30%;
 }
 .icon{
     color: #0d6efd;
 }
 .duration-right{
-background-color: #6a7ff9;
-border-radius: 42px;
-color: #fff;
-float: left;
-font-size: 16px;
-font-weight: 600;
-margin-left: 15px;
-padding: 12px 32px;
-position: relative;
-text-align: left;
-border: 5px solid rgba(255, 255, 255, 0.48);
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
+    background-color: #6a7ff9;
+    border-radius: 42px;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+    padding: 12px 32px;
+    position: relative;
+    text-align: left;
+    border: 5px solid rgba(255, 255, 255, 0.48);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
 
 }
 .date-label-left{
@@ -135,7 +141,7 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
     text-align: left;
     margin-left: 15px;
     float: left;
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
     border-radius: 0;
     padding: 20px;
   }
@@ -205,7 +211,7 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
   }
   .workgallery{
     position: relative;
-     height: 437.326px;
+     height: 300px;
   }
   .workgallery .col1 {
     position: absolute;
@@ -306,7 +312,7 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
 .card .content .img-1 {
     width: 100px;
     height: 100px;
-    margin: 0 auto;
+    margin-left: 300PX;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid white !important
@@ -331,13 +337,14 @@ hr {
     filter: alpha(opacity=40)
 }
 
-@media (max-width: 479px) {
+@media only screen and (min-device-width : 375px)   and (max-device-width: 667px)
+{
     p {
         padding: 0 !important
     }
 
     .img-1 {
-        margin-right: 0 !important
+        margin-left: auto !important
     }
 }
 .contact-form{
@@ -376,7 +383,6 @@ hr {
     box-shadow: none !important;
     outline: none !important;
     font-family: Times New Roman ;
-   
 }
 .custom-form textarea.form-control {
     height: auto;
@@ -410,7 +416,7 @@ hr {
     text-align: center;
 }
 .section-title1 {
-    padding-top: 5%;
+    padding-top: 2%;
     font: 18px/24px "opensans-bold",sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -445,6 +451,11 @@ hr {
   }
   @media only screen and (min-device-width : 375px)   and (max-device-width: 667px)
   { /* STYLES GO HERE */
+
+.send {
+font-size: 80% !important;
+width: 200%;margin-left: -30px;
+}
     .education{
         display: none;
     }
@@ -470,6 +481,7 @@ hr {
         margin-top: 55%;
 
     }
+
     .footer .copy {
         font-size: 80%;
     }
@@ -484,7 +496,7 @@ font-size: 100%;    }
   min-width: 320px;
   max-width: 800px;
   padding: 50px;
-  margin: 0 auto;
+  margin-left: 150px ;
   background: rgb(0, 0, 0);
 }
 
@@ -492,7 +504,7 @@ font-size: 100%;    }
 #tsum-tabs label {
   display: inline-block;
   margin: 0 0 -1px;
-  padding: 15px 25px;
+  padding: 15px 15px;
   font-weight: 600;
   text-align: center;
   color: #bbb;
@@ -524,8 +536,15 @@ font-size: 100%;    }
   }
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (min-device-width : 375px)   and (max-device-width: 667px)
+{
   #tsum-tabs label {
     padding: 15px;
-  }
+
+
+  }#tsum-tabs label[for*='1']:before { content: '\f0c9'; }
+  #tsum-tabs label[for*='2']:before { content: ''; }
+#tsum-tabs label[for*='3']:before { content: ''; }
+#tsum-tabs label[for*='4']:before { content: ''; }
+
 }
